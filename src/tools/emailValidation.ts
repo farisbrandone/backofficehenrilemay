@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { baseUrl } from "./emailInitializePassword";
 
 export async function emailValidation(email: string) {
   try {
@@ -106,7 +107,7 @@ export async function emailValidation(email: string) {
           <div class="child-content1">
             <p>Votre compte est maintenant actif</p>
   
-            <a class="a-content1" href="https://olivier-carte.vercel.app">
+            <a class="a-content1" href="${baseUrl}/carte">
               Connectez-vous à notre site</a
             >
           </div>

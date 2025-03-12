@@ -1,5 +1,7 @@
 import nodemailer from "nodemailer";
 
+export const baseUrl = "https://backofficehenrilemay.onrender.com";
+
 export async function sendEmailForInitializePassword(
   code: string,
   email: string
@@ -89,7 +91,7 @@ export async function sendEmailForInitializePassword(
       </p>
       <a
         class="a-content1"
-        href="https://olivier-carte.vercel.app/redirection-mot-de-passe?code=${code}&email=${email}"
+        href="${baseUrl}/carte/redirection-mot-de-passe?code=${code}&email=${email}"
       >
         Cliquez ici</a
       >

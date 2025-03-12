@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { baseUrl } from "./emailInitializePassword";
 
 export async function emailSignup(
   code: string,
@@ -100,7 +101,7 @@ export async function emailSignup(
     
               <a
                 class="a-child2"
-                href="https://olivier-carte.vercel.app/redirection-activation-compte?code=${code}&emailActivate=${email}&passwordActivate=${password}"
+                href="${baseUrl}/carte/redirection-activation-compte?code=${code}&emailActivate=${email}&passwordActivate=${password}"
               >
                 Activez votre compte</a
               >
