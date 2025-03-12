@@ -59,7 +59,7 @@ export async function login(req: Request, res: Response): Promise<void> {
     res.status(500).json({ message: "Error during login", error });
   }
 }
-
+//export const baseUrl = "https://backofficehenrilemay.onrender.com";
 // Connexion
 export async function adminLogin(req: Request, res: Response): Promise<void> {
   const { email, password } = req.body;
